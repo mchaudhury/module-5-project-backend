@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Back End Assessment</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body class="container">
+    <button id="complimentButton" class="color1">Get a compliment</button>
+    <button id="fortuneButton" class="color2">Get a fortune</button>
+
+    <div class="color3">
+      <form id="weatherForm" class="color4">
+        <input
+          type="text"
+          name="city"
+          id="city"
+          placeholder="Type a city"
+          class="color5"
+        />
+        <button type="submit" class="color6">Find the weather forecast</button>
+      </form>
+    </div>
+
+    <div id="weatherContainer" class="color7"></div>
+
+    <div>
+      <form id="motivationForm" class="color8">
+        <input id="entry" type="text" placeholder="Type Quotation" />
+        <button type="submit">Add Motivation Quote</button>
+      </form>
+    </div>
+
+    <div id="motivationContainer"></div>
+
+
+
+
+
+    <form id="register-form">
+      <h1>Register</h1>
+      <input type="text" id="register-username" placeholder="Username" />
+      <input type="text" id="register-email" placeholder="Email" />
+      <input type="text" id="register-firstName" placeholder="First Name" />
+      <input type="text" id="register-lastName" placeholder="Last Name" />
+      <input type="password" id="register-password" placeholder="Password" />
+      <input
+        type="password"
+        id="register-password-2"
+        placeholder="Confirm Password"
+      />
+      <button>Register</button>
+    </form>
+
+    <section id="user-info"></section>
+    <form id="login-form">
+      <h1>Log In</h1>
+      <input 
+          type='text'
+          id="login-username"
+          placeholder="Username"/>
+      <input 
+          type='password'
+          id="login-password"
+          placeholder='Password'/>
+      <button>Sign In</button>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="./main.js"></script>
+
+    <!-- axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=b825a4c3bc1dad5c4c633a3c8d45bdee` -->
+  </body>
+</html>
